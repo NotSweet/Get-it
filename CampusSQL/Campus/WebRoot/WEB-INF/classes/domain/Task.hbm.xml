@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!--配置实体类和表之间的映射 -->
+	<class name="domain.Task" table="task">
+		<!--配置主键 -->
+		<id name="id" column="id">
+			<!-- 主键生成策略 -->
+			<generator class="native" />
+		</id>
+		<!--配置其他属性 -->
+		<property name="title" />
+		<property name="content" />
+		<property name="username" />
+		<property name="score" />
+		<property name="phone_number" />
+		<property name="address" />
+		<property name="radio_title" />
+		<property name="radio" />
+		<property name="status" />
+		<property name="receive_time" />
+		<property name="create_time" />
+
+
+
+
+
+
+	</class>
+</hibernate-mapping>
